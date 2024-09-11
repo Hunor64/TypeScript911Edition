@@ -7,7 +7,7 @@ type Driver = {
     age: number,
     driverLicense: boolean,
     penatlyPoints: number,
-    countryCode: 'H' | 'F' | 'B' | 'NL' | 'D' | 'BIH'
+    countryCode: 'H' | 'F' | 'B' | 'NL' | 'D' | 'BIH' | 'US'
 }
 
 let joe: Driver = {
@@ -15,5 +15,5 @@ let joe: Driver = {
     age: 78,
     driverLicense: true,
     penatlyPoints: 0,
-    countryCode: 'H'
+    countryCode: 'US'
 }
