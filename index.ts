@@ -7,8 +7,10 @@ type Driver = {
     age: number,
     driverLicense: boolean,
     penatlyPoints: number,
-    countryCode: 'H' | 'F' | 'B' | 'NL' | 'D' | 'BIH' | 'US'
+    countryCode: CountryCodes
 }
+
+type CountryCodes = 'H' | 'F' | 'B' | 'NL' | 'D' | 'BIH' | 'US'
 
 let joe: Driver = {
     name: "Joe Biden",
@@ -37,4 +39,22 @@ let bela: IDriver = {
     penatlyPoints: 0,
     countryCode: 'BIH',
     bloodAlcohol: 0.5
+}
+
+type Car = {
+    carType: string,
+    isRolling: boolean
+
+}
+
+type Airplapne = {
+    airPlaneNumber:number,
+    isFlying: boolean
+}
+
+type Vehicle = Auto | Airplapne
+
+let mustang: Vehicle = {
+    carType: "muscle",
+    isRolling: true
 }
