@@ -2,6 +2,13 @@ let username: string = "joelle Biden"
 let age: number = 78
 let driverLicense: boolean = true
 
+
+let numbers: number[] = [1, 2, 3, 4, 5]
+let matrix: number[][] = [[1,2,3],[1,2,3]]
+
+let a:any ="joey"
+
+
 type Driver = {
     name: string,
     age: number,
@@ -52,7 +59,7 @@ type Airplapne = {
     isFlying: boolean
 }
 
-type Vehicle = Auto | Airplapne
+type Vehicle = Car | Airplapne
 
 let mustang: Vehicle = {
     carType: "muscle",
