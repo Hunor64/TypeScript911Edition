@@ -17,3 +17,24 @@ let joe: Driver = {
     penatlyPoints: 0,
     countryCode: 'US'
 }
+
+interface IDriver {
+    name: string,
+    age: number,
+    driverLicense: boolean,
+    penatlyPoints: number,
+    countryCode: 'H' | 'F' | 'B' | 'NL' | 'D' | 'BIH' | 'US'
+}
+
+interface IDriver {
+    bloodAlcohol: number
+}
+
+let bela: IDriver = {
+    name: "Bela",
+    age: 69,
+    driverLicense: true,
+    penatlyPoints: 0,
+    countryCode: 'BIH',
+    bloodAlcohol: 0.5
+}
