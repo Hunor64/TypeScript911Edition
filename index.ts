@@ -6,12 +6,20 @@ type Pokemon = {
   height: number;
   location_area_encounters: string;
   is_default: boolean;
+  
 };
 type Ability = {
   name: string;
   url: string;
 };
-
+type Stats ={
+    base_stat:number;
+    effort:number;
+    stat: {
+        name:string;
+        url:string;
+    }
+}
 type Abilities = {
   ability: Ability;
   is_hidden: boolean;
